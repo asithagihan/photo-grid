@@ -34,7 +34,7 @@ services:
       dockerfile: Dockerfile
     image: grid-client
     container_name: grid-react-client
-    command: yarn start
+    command: npm start
     volumes:
       - ./client/:/usr/app
       - /usr/app/node_modules
