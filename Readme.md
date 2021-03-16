@@ -15,3 +15,14 @@ npm start
 Please navigate to url http://localhost:3000/
 
 This development does not include a user authentication at the moment some hard coded provision is included for the implementation
+
+
+Docker 
+
+Please use following commands
+
+docker-compose build --no-cache
+docker-compose up
+
+to delete the existing record from the cotext since there is no delete action
+docker-compose down -v
