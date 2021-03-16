@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
         const result = await Grid.find(grid);
         res.status(200).send({
             success: true,
-            data : result
+            result
         });
     }
     catch (ex) {
@@ -32,7 +32,7 @@ router.post("/", async (req, res) => {
         const result = await Grid.create(grid);
         res.status(200).send({
             success: true,
-            data : result
+            result
         });
     }
     catch (ex) {
@@ -54,7 +54,7 @@ router.put("/:gridId", async (req, res) => {
         const result = await Grid.findOneAndUpdate(req.query.gridId,grid);
         res.status(200).send({
             success: true,
-            data : result
+            result
         });
     }
     catch (ex) {

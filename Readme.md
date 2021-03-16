@@ -1,5 +1,7 @@
 Pre-requirements
-Please run a docker mongo image / local mongo installation look into ./server/.env file for port and host
+Please run a docker mongo image / local mongo installation look into ./server/.env file for port and 
+change host to localhost in ./server/.env
+change proxy to http://localhost:8080 in ./client/package.json
 
 Please use following commands
 cd ./server 
@@ -12,4 +14,4 @@ npm start
 
 Please navigate to url http://localhost:3000/
 
-This development does not include a user authentication at the moment some provision is included for the implementation
+This development does not include a user authentication at the moment some hard coded provision is included for the implementation
